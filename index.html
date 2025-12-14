@@ -7,6 +7,9 @@
     <meta name="keywords" content="IntiUV, radiación UV, monitoreo UV, cambio climático, salud ocupacional, energía solar, IoT">
     <title>IntiUV+ | Protegiendo vidas del cambio climático</title>
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="img/logos/logo.webp">
+    
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,13 +35,17 @@
                     <span></span>
                     <span></span>
                 </button>
+                <div class="lang-selector">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="es">ES</button>
+                </div>
                 <ul class="nav-menu" id="navMenu">
-                    <li><a href="#problema">Problema</a></li>
-                    <li><a href="#solucion">Solución</a></li>
-                    <li><a href="#impacto">Impacto</a></li>
-                    <li><a href="#equipo">Equipo</a></li>
-                    <li><a href="https://intismart.com" target="_blank" rel="noopener">Visitar INTI Smart</a></li>
-                    <li><a href="#contacto" class="btn-primary">Contacto</a></li>
+                    <li><a href="#problema" data-en="Problem" data-es="Problema">Problem</a></li>
+                    <li><a href="#solucion" data-en="Solution" data-es="Solución">Solution</a></li>
+                    <li><a href="#impacto" data-en="Impact" data-es="Impacto">Impact</a></li>
+                    <li><a href="#equipo" data-en="Team" data-es="Equipo">Team</a></li>
+                    <li><a href="https://intismart.com" target="_blank" rel="noopener">INTI Smart</a></li>
+                    <li><a href="#contacto" class="btn-primary" data-en="Contact" data-es="Contacto">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -57,8 +64,8 @@
         </div>
         <div class="container hero-content">
             <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
-                <h1 class="hero-title">Protegiendo vidas del <span class="highlight">cambio climático</span></h1>
-                <p class="hero-subtitle">Sistema inteligente de monitoreo UV en tiempo real con energía solar</p>
+                <h1 class="hero-title" data-en="Protecting lives from <span class='highlight'>climate change</span>" data-es="Protegiendo vidas del <span class='highlight'>cambio climático</span>">Protecting lives from <span class="highlight">climate change</span></h1>
+                <p class="hero-subtitle" data-en="Smart real-time UV monitoring system with solar energy" data-es="Sistema inteligente de monitoreo UV en tiempo real con energía solar">Smart real-time UV monitoring system with solar energy</p>
                 <div class="hero-stats">
                     <div class="stat" data-aos="fade-up" data-aos-delay="200">
                         <div class="stat-number" data-count="95">0</div>
@@ -88,8 +95,8 @@
     <section class="problema" id="problema">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">El Desafío</span>
-                <h2>El cambio climático está aumentando la radiación UV a niveles peligrosos</h2>
+                <span class="section-tag" data-en="The Challenge" data-es="El Desafío">The Challenge</span>
+                <h2 data-en="Climate change is increasing UV radiation to dangerous levels" data-es="El cambio climático está aumentando la radiación UV a niveles peligrosos">Climate change is increasing UV radiation to dangerous levels</h2>
             </div>
             
             <div class="problema-grid">
@@ -101,8 +108,8 @@
                             <path d="M16 16L22 22M42 22L48 16M16 48L22 42M42 42L48 48" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                         </svg>
                     </div>
-                    <h3>Aumento de radiación UV</h3>
-                    <p>El deterioro de la capa de ozono y el cambio climático han incrementado la exposición a radiación UV en regiones andinas hasta niveles extremos (índice UV >14).</p>
+                    <h3 data-en="Increased UV Radiation" data-es="Aumento de radiación UV">Increased UV Radiation</h3>
+                    <p data-en="Ozone layer deterioration and climate change have increased UV exposure in Andean regions to extreme levels (UV index >14)." data-es="El deterioro de la capa de ozono y el cambio climático han incrementado la exposición a radiación UV en regiones andinas hasta niveles extremos (índice UV >14).">Ozone layer deterioration and climate change have increased UV exposure in Andean regions to extreme levels (UV index >14).</p>
                 </div>
 
                 <div class="problema-card" data-aos="fade-up" data-aos-delay="200">
@@ -112,8 +119,8 @@
                             <path d="M32 20V32L40 40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                         </svg>
                     </div>
-                    <h3>Trabajadores en riesgo</h3>
-                    <p>Miles de trabajadores en minería, agricultura y construcción están expuestos sin protección adecuada, aumentando el riesgo de cáncer de piel y otras enfermedades.</p>
+                    <h3 data-en="Workers at Risk" data-es="Trabajadores en riesgo">Workers at Risk</h3>
+                    <p data-en="Thousands of workers in mining, agriculture and construction are exposed without adequate protection, increasing the risk of skin cancer and other diseases." data-es="Miles de trabajadores en minería, agricultura y construcción están expuestos sin protección adecuada, aumentando el riesgo de cáncer de piel y otras enfermedades.">Thousands of workers in mining, agriculture and construction are exposed without adequate protection, increasing the risk of skin cancer and other diseases.</p>
                 </div>
 
                 <div class="problema-card" data-aos="fade-left" data-aos-delay="300">
@@ -123,15 +130,15 @@
                             <path d="M24 28L28 32L40 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3>Falta de sistemas de alerta</h3>
-                    <p>Las soluciones actuales son costosas (>S/15,000), no preventivas y carecen de alertas en tiempo real, dejando a la población desprotegida.</p>
+                    <h3 data-en="Lack of Alert Systems" data-es="Falta de sistemas de alerta">Lack of Alert Systems</h3>
+                    <p data-en="Current solutions are expensive (>$4,000), not preventive and lack real-time alerts, leaving the population unprotected." data-es="Las soluciones actuales son costosas (>S/15,000), no preventivas y carecen de alertas en tiempo real, dejando a la población desprotegida.">Current solutions are expensive (>$4,000), not preventive and lack real-time alerts, leaving the population unprotected.</p>
                 </div>
             </div>
 
             <div class="problema-stats" data-aos="fade-up" data-aos-delay="400">
                 <div class="stat-large">
                     <div class="stat-number-large">3,000+</div>
-                    <p>Casos anuales de cáncer de piel en Perú relacionados con exposición UV</p>
+                    <p data-en="Annual skin cancer cases in Peru related to UV exposure" data-es="Casos anuales de cáncer de piel en Perú relacionados con exposición UV">Annual skin cancer cases in Peru related to UV exposure</p>
                 </div>
             </div>
         </div>
@@ -141,63 +148,63 @@
     <section class="solucion" id="solucion">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">Nuestra Solución</span>
-                <h2>IntiUV+: Tecnología inteligente para proteger vidas</h2>
+                <span class="section-tag" data-en="Our Solution" data-es="Nuestra Solución">Our Solution</span>
+                <h2 data-en="IntiUV+: Smart technology to protect lives" data-es="IntiUV+: Tecnología inteligente para proteger vidas">IntiUV+: Smart technology to protect lives</h2>
             </div>
 
             <div class="solucion-showcase">
                 <div class="showcase-image" data-aos="fade-right">
                     <img src="img/dispositivo/dispositivo_frontal.png" alt="Dispositivo IntiUV+">
                     <div class="image-badge">
-                        <span>Patente registrada</span>
+                        <span data-en="Patent registered" data-es="Patente registrada">Patent registered</span>
                     </div>
                 </div>
 
                 <div class="showcase-content" data-aos="fade-left">
-                    <h3>Sistema autónomo de monitoreo UV en tiempo real</h3>
-                    <p class="lead">IntiUV+ es un dispositivo inteligente que mide la radiación ultravioleta cada 5 minutos, enviando alertas preventivas a través de una aplicación móvil para proteger a las personas en espacios públicos y laborales.</p>
+                    <h3 data-en="Autonomous real-time UV monitoring system" data-es="Sistema autónomo de monitoreo UV en tiempo real">Autonomous real-time UV monitoring system</h3>
+                    <p class="lead" data-en="IntiUV+ is a smart device that measures ultraviolet radiation every 5 minutes, sending preventive alerts through a mobile app to protect people in public and work spaces." data-es="IntiUV+ es un dispositivo inteligente que mide la radiación ultravioleta cada 5 minutos, enviando alertas preventivas a través de una aplicación móvil para proteger a las personas en espacios públicos y laborales.">IntiUV+ is a smart device that measures ultraviolet radiation every 5 minutes, sending preventive alerts through a mobile app to protect people in public and work spaces.</p>
                     
                     <div class="features-grid">
                         <div class="feature">
                             <div class="feature-icon">⚡</div>
                             <div class="feature-text">
-                                <h4>Energía Solar</h4>
-                                <p>100% autónomo y sostenible</p>
+                                <h4 data-en="Solar Energy" data-es="Energía Solar">Solar Energy</h4>
+                                <p data-en="100% autonomous and sustainable" data-es="100% autónomo y sostenible">100% autonomous and sustainable</p>
                             </div>
                         </div>
                         <div class="feature">
                             <div class="feature-icon">📱</div>
                             <div class="feature-text">
-                                <h4>App Móvil</h4>
-                                <p>Alertas en tiempo real</p>
+                                <h4 data-en="Mobile App" data-es="App Móvil">Mobile App</h4>
+                                <p data-en="Real-time alerts" data-es="Alertas en tiempo real">Real-time alerts</p>
                             </div>
                         </div>
                         <div class="feature">
                             <div class="feature-icon">🎯</div>
                             <div class="feature-text">
-                                <h4>95% Precisión</h4>
-                                <p>Calibrado en laboratorio</p>
+                                <h4 data-en="95% Accuracy" data-es="95% Precisión">95% Accuracy</h4>
+                                <p data-en="Lab calibrated" data-es="Calibrado en laboratorio">Lab calibrated</p>
                             </div>
                         </div>
                         <div class="feature">
                             <div class="feature-icon">🌡️</div>
                             <div class="feature-text">
-                                <h4>Multi-sensor</h4>
-                                <p>UV + Temperatura + Humedad</p>
+                                <h4 data-en="Multi-sensor" data-es="Multi-sensor">Multi-sensor</h4>
+                                <p data-en="UV + Temperature + Humidity" data-es="UV + Temperatura + Humedad">UV + Temperature + Humidity</p>
                             </div>
                         </div>
                         <div class="feature">
                             <div class="feature-icon">☁️</div>
                             <div class="feature-text">
-                                <h4>IoT Cloud</h4>
-                                <p>Datos en la nube (ThingSpeak)</p>
+                                <h4 data-en="IoT Cloud" data-es="IoT Cloud">IoT Cloud</h4>
+                                <p data-en="Cloud data (ThingSpeak)" data-es="Datos en la nube (ThingSpeak)">Cloud data (ThingSpeak)</p>
                             </div>
                         </div>
                         <div class="feature">
                             <div class="feature-icon">💰</div>
                             <div class="feature-text">
-                                <h4>Bajo Costo</h4>
-                                <p>S/3,500 vs S/15,000+</p>
+                                <h4 data-en="Low Cost" data-es="Bajo Costo">Low Cost</h4>
+                                <p data-en="$900 vs $4,000+" data-es="S/3,500 vs S/15,000+">$900 vs $4,000+</p>
                             </div>
                         </div>
                     </div>
@@ -206,24 +213,27 @@
 
             <!-- Diagrama técnico -->
             <div class="tech-diagram" data-aos="fade-up">
-                <h3>Arquitectura del sistema</h3>
-                <img src="img/diagrama_funcionamiento_del_circuito_digrama_de_conexiones.png" alt="Diagrama de funcionamiento IntiUV+">
+                <h3>System Architecture</h3>
+                <div class="tech-images">
+                    <img src="img/diagrama_funcionamiento_del_circuito_digrama_de_conexiones.png" alt="System Diagram">
+                    <img src="img/sensores_perfi_conexiones_foto_pcb.png" alt="Sensors & PCB">
+                </div>
             </div>
 
             <!-- App Screenshot -->
             <div class="app-showcase" data-aos="fade-up">
                 <div class="app-content">
-                    <h3>Alertas preventivas en tu bolsillo</h3>
-                    <p>Nuestra aplicación móvil te notifica en tiempo real sobre los niveles de radiación UV, permitiéndote tomar decisiones informadas para proteger tu salud.</p>
+                    <h3>Preventive alerts in your pocket</h3>
+                    <p>Our mobile app notifies you in real-time about UV radiation levels, allowing you to make informed decisions to protect your health.</p>
                     <ul class="app-features">
-                        <li>Notificaciones push en tiempo real</li>
-                        <li>Historial de mediciones</li>
-                        <li>Recomendaciones personalizadas</li>
-                        <li>Datos científicos validados</li>
+                        <li>Real-time push notifications</li>
+                        <li>Measurement history</li>
+                        <li>Personalized recommendations</li>
+                        <li>Validated scientific data</li>
                     </ul>
                 </div>
                 <div class="app-image">
-                    <img src="img/foto_app.jpg" alt="App IntiUV+">
+                    <img src="img/foto_app.jpg" alt="IntiUV+ App" class="app-screenshot">
                 </div>
             </div>
         </div>
@@ -233,49 +243,56 @@
     <section class="impacto" id="impacto">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">Nuestro Impacto</span>
-                <h2>Resultados que transforman comunidades</h2>
+                <span class="section-tag" data-en="Our Impact" data-es="Nuestro Impacto">Our Impact</span>
+                <h2 data-en="Results that transform communities" data-es="Resultados que transforman comunidades">Results that transform communities</h2>
             </div>
 
             <div class="impacto-grid">
                 <div class="impacto-card" data-aos="zoom-in" data-aos-delay="100">
                     <div class="impacto-number" data-count="2">0</div>
-                    <h4>Dispositivos instalados</h4>
-                    <p>Campus UNALM - Lima, Perú</p>
+                    <h4 data-en="Installed Devices" data-es="Dispositivos instalados">Installed Devices</h4>
+                    <p data-en="UNALM Campus - Lima, Peru" data-es="Campus UNALM - Lima, Perú">UNALM Campus - Lima, Peru</p>
                 </div>
                 <div class="impacto-card" data-aos="zoom-in" data-aos-delay="200">
                     <div class="impacto-number"><span data-count="288">0</span></div>
-                    <h4>Mediciones diarias</h4>
-                    <p>Datos cada 5 minutos</p>
+                    <h4 data-en="Daily Measurements" data-es="Mediciones diarias">Daily Measurements</h4>
+                    <p data-en="Data every 5 minutes" data-es="Datos cada 5 minutos">Data every 5 minutes</p>
                 </div>
                 <div class="impacto-card" data-aos="zoom-in" data-aos-delay="300">
                     <div class="impacto-number"><span data-count="5000">0</span>+</div>
-                    <h4>Personas protegidas</h4>
-                    <p>Comunidad universitaria</p>
+                    <h4 data-en="Protected People" data-es="Personas protegidas">Protected People</h4>
+                    <p data-en="University community" data-es="Comunidad universitaria">University community</p>
                 </div>
                 <div class="impacto-card" data-aos="zoom-in" data-aos-delay="400">
                     <div class="impacto-number"><span data-count="77">0</span>%</div>
-                    <h4>Más económico</h4>
-                    <p>vs. soluciones actuales</p>
+                    <h4 data-en="More Affordable" data-es="Más económico">More Affordable</h4>
+                    <p data-en="vs. current solutions" data-es="vs. soluciones actuales">vs. current solutions</p>
                 </div>
+            </div>
+
+            <!-- Dashboard UV -->
+            <div class="uv-dashboard" data-aos="fade-up">
+                <h3 data-en="Real-time UV Data Dashboard" data-es="Dashboard de Datos UV en Tiempo Real">Real-time UV Data Dashboard</h3>
+                <p data-en="Live monitoring and data visualization from our installed devices" data-es="Monitoreo en vivo y visualización de datos de nuestros dispositivos instalados">Live monitoring and data visualization from our installed devices</p>
+                <img src="img/registros_UV_dasboard_como_registra.png" alt="UV Dashboard" class="dashboard-img">
             </div>
 
             <!-- Instalaciones -->
             <div class="instalaciones" data-aos="fade-up">
-                <h3>Instalaciones activas</h3>
+                <h3 data-en="Active Installations" data-es="Instalaciones Activas">Active Installations</h3>
                 <div class="instalaciones-grid">
                     <div class="instalacion-card">
                         <img src="img/instalaciones/dispositivo_puerta1.png" alt="Instalación Puerta 1 UNALM">
                         <div class="instalacion-info">
-                            <h4>UNALM - Puerta 1</h4>
-                            <p>Monitoreo continuo desde junio 2025</p>
+                            <h4 data-en="UNALM - Gate 1" data-es="UNALM - Puerta 1">UNALM - Gate 1</h4>
+                            <p data-en="Continuous monitoring since June 2025" data-es="Monitoreo continuo desde junio 2025">Continuous monitoring since June 2025</p>
                         </div>
                     </div>
                     <div class="instalacion-card">
                         <img src="img/instalaciones/foto_perfil_dispositivo_puerta_principal.webp" alt="Instalación Puerta Principal UNALM">
                         <div class="instalacion-info">
-                            <h4>UNALM - Puerta Principal</h4>
-                            <p>Protegiendo la comunidad universitaria</p>
+                            <h4 data-en="UNALM - Main Gate" data-es="UNALM - Puerta Principal">UNALM - Main Gate</h4>
+                            <p data-en="Protecting the university community" data-es="Protegiendo la comunidad universitaria">Protecting the university community</p>
                         </div>
                     </div>
                 </div>
@@ -287,85 +304,125 @@
     <section class="timeline" id="timeline">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">Nuestra Trayectoria</span>
-                <h2>De la idea al impacto real</h2>
+                <span class="section-tag" data-en="Our Journey" data-es="Nuestra Trayectoria">Our Journey</span>
+                <h2 data-en="From idea to real impact" data-es="De la idea al impacto real">From idea to real impact</h2>
             </div>
 
             <div class="timeline-container">
-                <div class="timeline-item" data-aos="fade-right">
-                    <div class="timeline-date">Sep 2024</div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <button class="timeline-toggle">
+                        <span class="timeline-date">Sep 2024</span>
+                        <h3 data-en="First Prototype" data-es="Primer Prototipo">First Prototype</h3>
+                        <span class="toggle-icon">+</span>
+                    </button>
                     <div class="timeline-content">
-                        <h3>Primer Prototipo</h3>
-                        <p>Presentación en exposición científica UNALM, patrocinado por Incubagraria</p>
-                        <img src="img/trabajando_armado_prototipo_primer_prototipo.webp" alt="Primer prototipo">
+                        <p data-en="Presented at UNALM scientific exhibition, sponsored by Incubagraria" data-es="Presentado en feria científica UNALM, auspiciado por Incubagraria">Presented at UNALM scientific exhibition, sponsored by Incubagraria</p>
+                        <img src="img/trabajando_armado_prototipo_primer_prototipo.webp" alt="First prototype" loading="lazy">
                     </div>
                 </div>
 
-                <div class="timeline-item" data-aos="fade-left">
-                    <div class="timeline-date">Nov 2024</div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <button class="timeline-toggle">
+                        <span class="timeline-date">Nov 2024</span>
+                        <h3 data-en="Incubagraria Winners" data-es="Ganadores Incubagraria">Incubagraria Winners</h3>
+                        <span class="toggle-icon">+</span>
+                    </button>
                     <div class="timeline-content">
-                        <h3>Ganadores Incubagraria</h3>
-                        <p>Seleccionados en escalamiento empresarial - alianza estratégica clave</p>
-                        <img src="img/ganagores_incuba_para_escalamiento_negocio.png" alt="Ganadores Incubagraria">
+                        <p data-en="Selected for business scaling - key strategic alliance" data-es="Seleccionados para escalamiento de negocio - alianza estratégica clave">Selected for business scaling - key strategic alliance</p>
+                        <div class="timeline-images">
+                            <img src="img/ganadores_incuba_prototipago.png" alt="Winners with Prototype" loading="lazy">
+                            <img src="img/ganagores_incuba_para_escalamiento_negocio.png" alt="Business Scaling Award" loading="lazy">
+                        </div>
                     </div>
                 </div>
 
-                <div class="timeline-item" data-aos="fade-right">
-                    <div class="timeline-date">Ene 2025</div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <button class="timeline-toggle">
+                        <span class="timeline-date">Jan 2025</span>
+                        <h3 data-en="INTI Smart S.A.C Creation" data-es="Creación de INTI Smart S.A.C">INTI Smart S.A.C Creation</h3>
+                        <span class="toggle-icon">+</span>
+                    </button>
                     <div class="timeline-content">
-                        <h3>Creación de INTI Smart S.A.C</h3>
-                        <p>Primera empresa peruana especializada en Sistemas de Alerta Temprana UV</p>
+                        <p data-en="First Peruvian company specialized in UV Early Warning Systems" data-es="Primera empresa peruana especializada en Sistemas de Alerta Temprana UV">First Peruvian company specialized in UV Early Warning Systems</p>
                     </div>
                 </div>
 
-                <div class="timeline-item" data-aos="fade-left">
-                    <div class="timeline-date">Mar 2025</div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <button class="timeline-toggle">
+                        <span class="timeline-date">Mar 2025</span>
+                        <h3 data-en="UNALM Strategic Alliance" data-es="Alianza Estratégica UNALM">UNALM Strategic Alliance</h3>
+                        <span class="toggle-icon">+</span>
+                    </button>
                     <div class="timeline-content">
-                        <h3>Alianza Estratégica UNALM</h3>
-                        <p>Convenio para implementar 2 dispositivos en campus universitario</p>
+                        <p data-en="Agreement to implement 2 devices on university campus" data-es="Convenio para implementar 2 dispositivos en campus universitario">Agreement to implement 2 devices on university campus</p>
                     </div>
                 </div>
 
-                <div class="timeline-item" data-aos="fade-right">
-                    <div class="timeline-date">May 2025</div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <button class="timeline-toggle">
+                        <span class="timeline-date">May 2025</span>
+                        <h3 data-en="Meeting with MINEM" data-es="Reunión con MINEM">Meeting with MINEM</h3>
+                        <span class="toggle-icon">+</span>
+                    </button>
                     <div class="timeline-content">
-                        <h3>Reunión con MINEM</h3>
-                        <p>Propuesta de red nacional de monitoreo UV en operaciones mineras a cielo abierto</p>
+                        <p data-en="Proposal for national UV monitoring network in open-pit mining operations" data-es="Propuesta de red nacional de monitoreo UV en operaciones mineras a cielo abierto">Proposal for national UV monitoring network in open-pit mining operations</p>
                     </div>
                 </div>
 
-                <div class="timeline-item" data-aos="fade-left">
-                    <div class="timeline-date">Jun 2025</div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <button class="timeline-toggle">
+                        <span class="timeline-date">Jun 2025</span>
+                        <h3 data-en="First Successful Installation" data-es="Primera Instalación Exitosa">First Successful Installation</h3>
+                        <span class="toggle-icon">+</span>
+                    </button>
                     <div class="timeline-content">
-                        <h3>Primera Instalación Exitosa</h3>
-                        <p>2 dispositivos IntiUV+ operativos en UNALM - Puerta Principal y Puerta 1</p>
-                        <img src="img/arreglando_dispositivo_de_la_puerta_1.jpg" alt="Instalación UNALM">
+                        <p data-en="2 IntiUV+ devices operational at UNALM - Main Gate and Gate 1" data-es="2 dispositivos IntiUV+ operativos en UNALM - Puerta Principal y Puerta 1">2 IntiUV+ devices operational at UNALM - Main Gate and Gate 1</p>
+                        <div class="timeline-images">
+                            <img src="img/instalaciones/foto_perfil_dispositivo_puerta_principal.webp" alt="Main Gate Installation" loading="lazy">
+                            <img src="img/instalaciones/dispositivo_puerta1.png" alt="Gate 1 Installation" loading="lazy">
+                        </div>
                     </div>
                 </div>
 
-                <div class="timeline-item" data-aos="fade-right">
-                    <div class="timeline-date">Sep 2025</div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <button class="timeline-toggle">
+                        <span class="timeline-date">Sep 2025</span>
+                        <h3 data-en="International Exhibition - Sinapsis Europe" data-es="Exposición Internacional - Sinapsis Europa">International Exhibition - Sinapsis Europe</h3>
+                        <span class="toggle-icon">+</span>
+                    </button>
                     <div class="timeline-content">
-                        <h3>Exposición Internacional - Sinapsis Europa</h3>
-                        <p>IX Encuentro de Científicos Peruanos en Europa presentando IntiUV+</p>
-                        <img src="img/eventos/foto_CEO_con_el_baner_SINAPSIS.jpg" alt="Sinapsis 2025">
+                        <p data-en="IX Meeting of Peruvian Scientists in Europe presenting IntiUV+ and community UV exposure awareness" data-es="IX Encuentro de Científicos Peruanos en Europa presentando IntiUV+ y concientización sobre exposición UV en comunidades">IX Meeting of Peruvian Scientists in Europe presenting IntiUV+ and community UV exposure awareness</p>
+                        <div class="timeline-images">
+                            <img src="img/eventos/foto_CEO_con_el_baner_SINAPSIS.jpg" alt="Sinapsis 2025" loading="lazy">
+                            <img src="img/eventos/presentación_SINAPSIS_2025_caratuladel_ppt.png" alt="Sinapsis Presentation" loading="lazy">
+                            <img src="img/eventos/esposicion_de_la_radiacion_uv_en_una_comunidad.jpg" alt="Community UV Exposure" loading="lazy">
+                        </div>
                     </div>
                 </div>
 
-                <div class="timeline-item" data-aos="fade-left">
-                    <div class="timeline-date">Nov 2025</div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <button class="timeline-toggle">
+                        <span class="timeline-date">Nov 2025</span>
+                        <h3 data-en="Speakers at UNALM Research Week" data-es="Ponentes en Semana de Investigación UNALM">Speakers at UNALM Research Week</h3>
+                        <span class="toggle-icon">+</span>
+                    </button>
                     <div class="timeline-content">
-                        <h3>Ponentes en Semana de Investigación UNALM</h3>
-                        <p>Compartiendo nuestro conocimiento con la comunidad científica</p>
-                        <img src="img/eventos/semana_investigacion_exposicion.jpg" alt="Semana de Investigación">
+                        <p data-en="Sharing our knowledge with the scientific community" data-es="Compartiendo nuestro conocimiento con la comunidad científica">Sharing our knowledge with the scientific community</p>
+                        <div class="timeline-images">
+                            <img src="img/eventos/semana_investigacion_exposicion.jpg" alt="Research Week Presentation" loading="lazy">
+                            <img src="img/eventos/semana_investigacion_muestra_de_nuesto_baner_exposicion.jpg" alt="Exhibition Banner" loading="lazy">
+                        </div>
                     </div>
                 </div>
 
-                <div class="timeline-item current" data-aos="fade-right">
-                    <div class="timeline-date">Dic 2025</div>
-                    <div class="timeline-content">
-                        <h3>Aplicación a Protechting</h3>
-                        <p>En busca de nuevos retos para escalar nuestra solución internacionalmente</p>
+                <div class="timeline-item current" data-aos="fade-up">
+                    <button class="timeline-toggle active">
+                        <span class="timeline-date">Dec 2025</span>
+                        <h3 data-en="Application to Protechting" data-es="Postulación a Protechting">Application to Protechting</h3>
+                        <span class="toggle-icon">−</span>
+                    </button>
+                    <div class="timeline-content active">
+                        <p data-en="Seeking new challenges to scale our solution internationally" data-es="Buscando nuevos retos para escalar nuestra solución internacionalmente">Seeking new challenges to scale our solution internationally</p>
                     </div>
                 </div>
             </div>
@@ -376,61 +433,41 @@
     <section class="equipo" id="equipo">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">Nuestro Equipo</span>
-                <h2>Meteorólogos jóvenes transformando la prevención</h2>
-                <p>Egresados de la Universidad Nacional Agraria La Molina con más de 6 años de amistad y colaboración</p>
+                <span class="section-tag" data-en="Our Team" data-es="Nuestro Equipo">Our Team</span>
+                <h2 data-en="Young meteorologists transforming prevention" data-es="Meteorólogos jóvenes transformando la prevención">Young meteorologists transforming prevention</h2>
+                <p data-en="Graduates from Universidad Nacional Agraria La Molina with over 6 years of friendship and collaboration" data-es="Egresados de la Universidad Nacional Agraria La Molina con más de 6 años de amistad y colaboración">Graduates from Universidad Nacional Agraria La Molina with over 6 years of friendship and collaboration</p>
             </div>
 
             <div class="equipo-grid">
-                <div class="team-member" data-aos="fade-up" data-aos-delay="100">
-                    <div class="member-image">
-                        <img src="img/equipo/_naasonCEO.webp" alt="Naason Perez Rojas">
+                <div class="team-ceo" data-aos="fade-right">
+                    <div class="ceo-image">
+                        <img src="img/equipo/_naasonCEO.webp" alt="Naason Perez Rojas - CEO">
                     </div>
-                    <div class="member-info">
-                        <h3>Naason Milcerio Perez Rojas</h3>
-                        <span class="member-role">CEO & Tech Lead</span>
-                        <p>Especialista en desarrollo tecnológico, análisis de datos y sistemas IoT en la nube. Lidera la arquitectura técnica de IntiUV+.</p>
-                    </div>
-                </div>
-
-                <div class="team-member" data-aos="fade-up" data-aos-delay="200">
-                    <div class="member-image">
-                        <img src="img/equipo/equipo_fotoGruapal.webp" alt="Johan Montoya">
-                    </div>
-                    <div class="member-info">
-                        <h3>Johan Jean Pierre Montoya Huayhua</h3>
-                        <span class="member-role">Marketing & Ventas</span>
-                        <p>Estratega comercial enfocado en posicionamiento de mercado y escalamiento de producción para ventas B2B y B2G.</p>
+                    <div class="ceo-info">
+                        <h3 data-en="Naason Milcerio Perez Rojas" data-es="Naason Milcerio Perez Rojas">Naason Milcerio Perez Rojas</h3>
+                        <span class="member-role" data-en="CEO & Tech Lead" data-es="CEO & Líder Técnico">CEO & Tech Lead</span>
+                        <p data-en="Meteorologist specialized in technological development, data analytics, and IoT cloud systems. Leads the technical architecture of IntiUV+, ensuring precision and scalability." data-es="Meteorólogo especializado en desarrollo tecnológico, analítica de datos y sistemas IoT en la nube. Lidera la arquitectura técnica de IntiUV+, asegurando precisión y escalabilidad.">Meteorologist specialized in technological development, data analytics, and IoT cloud systems. Leads the technical architecture of IntiUV+, ensuring precision and scalability.</p>
                     </div>
                 </div>
 
-                <div class="team-member" data-aos="fade-up" data-aos-delay="300">
-                    <div class="member-image">
-                        <img src="img/equipo/equipo_fotoGruapal.webp" alt="Yulinio Oimas">
-                    </div>
-                    <div class="member-info">
-                        <h3>Yulinio Oimas Mamani</h3>
-                        <span class="member-role">Investigación & Manufactura</span>
-                        <p>Experto en hardware, Arduino y componentes electrónicos. Lidera el desarrollo y manufactura de dispositivos IntiUV+.</p>
-                    </div>
-                </div>
-
-                <div class="team-member" data-aos="fade-up" data-aos-delay="400">
-                    <div class="member-image">
-                        <img src="img/equipo/equipo_fotoGruapal.webp" alt="Jhelssyn Huayanay">
-                    </div>
-                    <div class="member-info">
-                        <h3>Jhelssyn Huayanay Quispe</h3>
-                        <span class="member-role">Investigación Científica</span>
-                        <p>Responsable de investigación científica, publicaciones, calibraciones y validación técnica de mediciones UV.</p>
+                <div class="team-group" data-aos="fade-left">
+                    <img src="img/equipo_grupal_conepremio.png" alt="INTI Smart Team">
+                    <div class="team-members-list">
+                        <h4 data-en="Our Team" data-es="Nuestro Equipo">Our Team</h4>
+                        <div class="member-item">
+                            <strong data-en="Johan Jean Pierre Montoya Huayhua" data-es="Johan Jean Pierre Montoya Huayhua">Johan Jean Pierre Montoya Huayhua</strong>
+                            <span data-en="Marketing & Sales - Market positioning and production scaling" data-es="Marketing & Ventas - Posicionamiento de mercado y escalamiento de producción">Marketing & Sales - Market positioning and production scaling</span>
+                        </div>
+                        <div class="member-item">
+                            <strong data-en="Yulinio Oimas Mamani" data-es="Yulinio Oimas Mamani">Yulinio Oimas Mamani</strong>
+                            <span data-en="Research & Manufacturing - Hardware development and electronics" data-es="Investigación & Manufactura - Desarrollo de hardware y electrónica">Research & Manufacturing - Hardware development and electronics</span>
+                        </div>
+                        <div class="member-item">
+                            <strong data-en="Jhelssyn Huayanay Quispe" data-es="Jhelssyn Huayanay Quispe">Jhelssyn Huayanay Quispe</strong>
+                            <span data-en="Scientific Research - Publications, calibrations, and technical validation" data-es="Investigación Científica - Publicaciones, calibraciones y validación técnica">Scientific Research - Publications, calibrations, and technical validation</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Foto grupal -->
-            <div class="team-photo" data-aos="zoom-in">
-                <img src="img/equipo_grupal_conepremio.png" alt="Equipo INTI Smart">
-                <p class="caption">Equipo INTI Smart tras ganar Incubagraria 2024</p>
             </div>
         </div>
     </section>
@@ -439,8 +476,8 @@
     <section class="alianzas" id="alianzas">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">Nuestros Respaldos</span>
-                <h2>Instituciones que confían en nuestra tecnología</h2>
+                <span class="section-tag" data-en="Our Endorsements" data-es="Nuestros Respaldos">Our Endorsements</span>
+                <h2 data-en="Institutions that trust our technology" data-es="Instituciones que confían en nuestra tecnología">Institutions that trust our technology</h2>
             </div>
 
             <div class="logos-grid" data-aos="fade-up">
@@ -473,11 +510,39 @@
             <!-- Colaboración SENAMHI -->
             <div class="colaboracion-highlight" data-aos="fade-up">
                 <div class="colaboracion-content">
-                    <h3>Validación científica con SENAMHI</h3>
-                    <p>Estamos en proceso de calibración con el Servicio Nacional de Meteorología e Hidrología del Perú para garantizar la máxima precisión en nuestras mediciones y contribuir a la red nacional de monitoreo UV.</p>
+                    <h3 data-en="Scientific validation with SENAMHI" data-es="Validación científica con SENAMHI">Scientific validation with SENAMHI</h3>
+                    <p data-en="We are in the calibration process with Peru's National Meteorology and Hydrology Service to ensure maximum precision in our measurements and contribute to the national UV monitoring network." data-es="Estamos en proceso de calibración con el Servicio Nacional de Meteorología e Hidrología del Perú para asegurar la máxima precisión en nuestras mediciones y contribuir a la red nacional de monitoreo UV.">We are in the calibration process with Peru's National Meteorology and Hydrology Service to ensure maximum precision in our measurements and contribute to the national UV monitoring network.</p>
                 </div>
                 <div class="colaboracion-image">
-                    <img src="img/Fotos_con_los_miembros_senamhi.jpg" alt="Colaboración SENAMHI">
+                    <img src="img/Fotos_con_los_miembros_senamhi.jpg" alt="SENAMHI Collaboration">
+                </div>
+            </div>
+            
+            <!-- Certificación NASA -->
+            <div class="nasa-certification" data-aos="fade-up">
+                <h3 data-en="NASA Space Apps Challenge - Collaborators" data-es="NASA Space Apps Challenge - Colaboradores">NASA Space Apps Challenge - Collaborators</h3>
+                <div class="certification-content">
+                    <img src="img/certificado_colaboradores_nasa_space.jpg" alt="NASA Certification">
+                    <p data-en="Recognized as collaborators in NASA Space Apps Challenge, demonstrating our commitment to space technology and environmental monitoring." data-es="Reconocidos como colaboradores en NASA Space Apps Challenge, demostrando nuestro compromiso con la tecnología espacial y el monitoreo ambiental.">Recognized as collaborators in NASA Space Apps Challenge, demonstrating our commitment to space technology and environmental monitoring.</p>
+                </div>
+            </div>
+
+            <!-- Proceso de desarrollo -->
+            <div class="development-process" data-aos="fade-up">
+                <h3 data-en="Development Journey" data-es="Proceso de Desarrollo">Development Journey</h3>
+                <div class="process-grid">
+                    <div class="process-item">
+                        <img src="img/trabajando_armado_prototipo_primer_prototipo.webp" alt="Building prototype">
+                        <p data-en="Prototype Assembly" data-es="Ensamblaje del Prototipo">Prototype Assembly</p>
+                    </div>
+                    <div class="process-item">
+                        <img src="img/trabajando_testeo_corriente.webp" alt="Testing">
+                        <p data-en="Electrical Testing" data-es="Pruebas Eléctricas">Electrical Testing</p>
+                    </div>
+                    <div class="process-item">
+                        <img src="img/ambiente_laboral_trabajando.webp" alt="Work environment">
+                        <p data-en="Team Collaboration" data-es="Colaboración del Equipo">Team Collaboration</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -487,107 +552,87 @@
     <section class="pilotos" id="pilotos">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">Escalabilidad</span>
-                <h2>Listos para pilotos con Protechting</h2>
+                <span class="section-tag" data-en="Scalability" data-es="Escalabilidad">Scalability</span>
+                <h2 data-en="Ready for pilots with Protechting" data-es="Listos para pilotos con Protechting">Ready for pilots with Protechting</h2>
             </div>
 
             <div class="pilotos-grid">
                 <div class="piloto-card" data-aos="flip-left" data-aos-delay="100">
                     <div class="piloto-icon">🏥</div>
-                    <h3>Sector Salud</h3>
-                    <p>Aseguradoras de salud y hospitales: prevención de cáncer de piel y enfermedades relacionadas con UV</p>
+                    <h3 data-en="Health Sector" data-es="Sector Salud">Health Sector</h3>
+                    <p data-en="Health insurance companies and hospitals: prevention of skin cancer and UV-related diseases" data-es="Aseguradoras de salud y hospitales: prevención de cáncer de piel y enfermedades relacionadas con UV">Health insurance companies and hospitals: prevention of skin cancer and UV-related diseases</p>
                     <ul>
-                        <li>Programas preventivos para asegurados</li>
-                        <li>Reducción de siniestralidad</li>
-                        <li>Datos epidemiológicos UV</li>
+                        <li data-en="Preventive programs for policyholders" data-es="Programas preventivos para asegurados">Preventive programs for policyholders</li>
+                        <li data-en="Reduced claims" data-es="Reducción de siniestralidad">Reduced claims</li>
+                        <li data-en="UV epidemiological data" data-es="Datos epidemiológicos UV">UV epidemiological data</li>
                     </ul>
                 </div>
 
                 <div class="piloto-card" data-aos="flip-left" data-aos-delay="200">
                     <div class="piloto-icon">⛏️</div>
-                    <h3>Minería</h3>
-                    <p>Empresas mineras: protección de trabajadores en operaciones a cielo abierto</p>
+                    <h3 data-en="Mining" data-es="Minería">Mining</h3>
+                    <p data-en="Mining companies: worker protection in open-pit operations" data-es="Empresas mineras: protección de trabajadores en operaciones a cielo abierto">Mining companies: worker protection in open-pit operations</p>
                     <ul>
-                        <li>Cumplimiento normativo SST</li>
-                        <li>Alertas en tiempo real</li>
-                        <li>Red de monitoreo en faenas</li>
+                        <li data-en="Occupational safety compliance" data-es="Cumplimiento normativo SST">Occupational safety compliance</li>
+                        <li data-en="Real-time alerts" data-es="Alertas en tiempo real">Real-time alerts</li>
+                        <li data-en="Monitoring network at mine sites" data-es="Red de monitoreo en faenas">Monitoring network at mine sites</li>
                     </ul>
                 </div>
 
                 <div class="piloto-card" data-aos="flip-left" data-aos-delay="300">
                     <div class="piloto-icon">🏙️</div>
-                    <h3>Ciudades Inteligentes</h3>
-                    <p>Gobiernos locales: infraestructura de alerta temprana en espacios públicos</p>
+                    <h3 data-en="Smart Cities" data-es="Ciudades Inteligentes">Smart Cities</h3>
+                    <p data-en="Local governments: early warning infrastructure in public spaces" data-es="Gobiernos locales: infraestructura de alerta temprana en espacios públicos">Local governments: early warning infrastructure in public spaces</p>
                     <ul>
-                        <li>Parques y plazas protegidas</li>
-                        <li>Datos abiertos para ciudadanos</li>
-                        <li>Integración con apps municipales</li>
+                        <li data-en="Protected parks and plazas" data-es="Parques y plazas protegidas">Protected parks and plazas</li>
+                        <li data-en="Open data for citizens" data-es="Datos abiertos para ciudadanos">Open data for citizens</li>
+                        <li data-en="Integration with municipal apps" data-es="Integración con apps municipales">Integration with municipal apps</li>
                     </ul>
                 </div>
 
                 <div class="piloto-card" data-aos="flip-left" data-aos-delay="400">
                     <div class="piloto-icon">🎓</div>
-                    <h3>Educación</h3>
-                    <p>Universidades y colegios: protección de estudiantes y concientización</p>
+                    <h3 data-en="Education" data-es="Educación">Education</h3>
+                    <p data-en="Universities and schools: student protection and awareness" data-es="Universidades y colegios: protección de estudiantes y concientización">Universities and schools: student protection and awareness</p>
                     <ul>
-                        <li>Campus seguros</li>
-                        <li>Educación preventiva</li>
-                        <li>Investigación colaborativa</li>
+                        <li data-en="Safe campuses" data-es="Campus seguros">Safe campuses</li>
+                        <li data-en="Preventive education" data-es="Educación preventiva">Preventive education</li>
+                        <li data-en="Collaborative research" data-es="Investigación colaborativa">Collaborative research</li>
                     </ul>
                 </div>
             </div>
 
             <!-- Roadmap -->
             <div class="roadmap" data-aos="fade-up">
-                <h3>Roadmap de Expansión</h3>
+                <h3 data-en="Expansion Roadmap" data-es="Roadmap de Expansión">Expansion Roadmap</h3>
                 <div class="roadmap-phases">
                     <div class="phase">
                         <div class="phase-number">1</div>
-                        <h4>Red Universitaria</h4>
-                        <p>5 universidades en Lima</p>
+                        <h4 data-en="University Network" data-es="Red Universitaria">University Network</h4>
+                        <p data-en="5 universities in Lima" data-es="5 universidades en Lima">5 universities in Lima</p>
                         <span class="phase-timeline">Q1 2026</span>
                     </div>
                     <div class="phase">
                         <div class="phase-number">2</div>
-                        <h4>Sector Minero</h4>
-                        <p>3 operaciones piloto</p>
+                        <h4 data-en="Mining Sector" data-es="Sector Minero">Mining Sector</h4>
+                        <p data-en="3 pilot operations" data-es="3 operaciones piloto">3 pilot operations</p>
                         <span class="phase-timeline">Q2 2026</span>
                     </div>
                     <div class="phase">
                         <div class="phase-number">3</div>
-                        <h4>Red Nacional Perú</h4>
-                        <p>50 dispositivos en 10 ciudades</p>
+                        <h4 data-en="Peru National Network" data-es="Red Nacional Perú">Peru National Network</h4>
+                        <p data-en="50 devices in 10 cities" data-es="50 dispositivos en 10 ciudades">50 devices in 10 cities</p>
                         <span class="phase-timeline">Q3-Q4 2026</span>
                     </div>
                     <div class="phase">
                         <div class="phase-number">4</div>
-                        <h4>Expansión Latam</h4>
-                        <p>Chile, Bolivia, Ecuador</p>
+                        <h4 data-en="Latam Expansion" data-es="Expansión Latam">Latam Expansion</h4>
+                        <p data-en="Chile, Bolivia, Ecuador" data-es="Chile, Bolivia, Ecuador">Chile, Bolivia, Ecuador</p>
                         <span class="phase-timeline">2027</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Funding -->
-            <div class="funding-ask" data-aos="zoom-in">
-                <h3>Capital necesario para escalar</h3>
-                <div class="funding-amount">$50,000 USD</div>
-                <p>Para producir 50 unidades, establecer cadena de suministro escalable y ejecutar pilotos corporativos</p>
-                <div class="funding-breakdown">
-                    <div class="breakdown-item">
-                        <span class="amount">$25k</span>
-                        <span class="label">Producción (50 unidades)</span>
-                    </div>
-                    <div class="breakdown-item">
-                        <span class="amount">$15k</span>
-                        <span class="label">Marketing & Ventas</span>
-                    </div>
-                    <div class="breakdown-item">
-                        <span class="amount">$10k</span>
-                        <span class="label">R&D y Certificaciones</span>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -595,9 +640,9 @@
     <section class="contacto" id="contacto">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">Contáctanos</span>
-                <h2>Únete a la red de protección UV</h2>
-                <p>¿Interesado en pilotar IntiUV+ con nosotros? Conversemos</p>
+                <span class="section-tag" data-en="Contact Us" data-es="Contáctanos">Contact Us</span>
+                <h2 data-en="Join the UV protection network" data-es="Únete a la red de protección UV">Join the UV protection network</h2>
+                <p data-en="Interested in piloting IntiUV+ with us? Let's talk" data-es="¿Interesado en pilotar IntiUV+ con nosotros? Conversemos">Interested in piloting IntiUV+ with us? Let's talk</p>
             </div>
 
             <div class="contacto-content">
@@ -605,29 +650,29 @@
                     <div class="info-item">
                         <div class="info-icon">📧</div>
                         <div>
-                            <h4>Email</h4>
+                            <h4 data-en="Email" data-es="Email">Email</h4>
                             <a href="mailto:contacto@intismart.com">contacto@intismart.com</a>
                         </div>
                     </div>
                     <div class="info-item">
                         <div class="info-icon">📱</div>
                         <div>
-                            <h4>WhatsApp</h4>
+                            <h4 data-en="WhatsApp" data-es="WhatsApp">WhatsApp</h4>
                             <a href="https://wa.me/51918068388" target="_blank">+51 918 068 388</a>
                         </div>
                     </div>
                     <div class="info-item">
                         <div class="info-icon">🌐</div>
                         <div>
-                            <h4>Web</h4>
+                            <h4 data-en="Web" data-es="Web">Web</h4>
                             <a href="https://intismart.com" target="_blank">www.intismart.com</a>
                         </div>
                     </div>
                     <div class="info-item">
                         <div class="info-icon">📍</div>
                         <div>
-                            <h4>Ubicación</h4>
-                            <p>Lima, Perú</p>
+                            <h4 data-en="Location" data-es="Ubicación">Location</h4>
+                            <p data-en="Lima, Peru" data-es="Lima, Perú">Lima, Peru</p>
                         </div>
                     </div>
 
@@ -651,10 +696,10 @@
                 </div>
 
                 <div class="contacto-cta" data-aos="fade-left">
-                    <h3>Solicita una demostración</h3>
-                    <p>Instalamos un dispositivo IntiUV+ piloto en 2 semanas (próximamente en menos de 1 semana)</p>
-                    <a href="https://wa.me/51918068388?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20IntiUV+%20y%20solicitar%20un%20piloto" class="btn-primary" target="_blank">Contactar por WhatsApp</a>
-                    <p class="footnote">Respuesta en menos de 24 horas</p>
+                    <h3 data-en="Request a demonstration" data-es="Solicita una demostración">Request a demonstration</h3>
+                    <p data-en="We install a pilot IntiUV+ device in 2 weeks (soon in less than 1 week)" data-es="Instalamos un dispositivo IntiUV+ piloto en 2 semanas (próximamente en menos de 1 semana)">We install a pilot IntiUV+ device in 2 weeks (soon in less than 1 week)</p>
+                    <a href="https://wa.me/51918068388?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20IntiUV+%20y%20solicitar%20un%20piloto" class="btn-primary" target="_blank" data-en="Contact via WhatsApp" data-es="Contactar por WhatsApp">Contact via WhatsApp</a>
+                    <p class="footnote" data-en="Response in less than 24 hours" data-es="Respuesta en menos de 24 horas">Response in less than 24 hours</p>
                 </div>
             </div>
         </div>
@@ -666,18 +711,18 @@
             <div class="footer-content">
                 <div class="footer-logo">
                     <img src="img/logos/LOGO_BLANCO_intismart.webp" alt="INTI Smart">
-                    <p>Innovación que protege vidas del cambio climático</p>
+                    <p data-en="Innovation protecting lives from climate change" data-es="Innovación que protege vidas del cambio climático">Innovation protecting lives from climate change</p>
                 </div>
                 <div class="footer-info">
                     <p><strong>INTI Smart S.A.C</strong></p>
                     <p>RUC: 20613659081</p>
-                    <p>Fundada en 2025</p>
-                    <p>Lima, Perú</p>
+                    <p data-en="Founded in 2025" data-es="Fundada en 2025">Founded in 2025</p>
+                    <p data-en="Lima, Peru" data-es="Lima, Perú">Lima, Peru</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 INTI Smart S.A.C. Todos los derechos reservados | Patente Registrada</p>
-                <p class="protechting-tag">Candidato a Protechting 8va Edición</p>
+                <p data-en="&copy; 2025 INTI Smart S.A.C. All rights reserved | Registered Patent" data-es="&copy; 2025 INTI Smart S.A.C. Todos los derechos reservados | Patente Registrada">&copy; 2025 INTI Smart S.A.C. All rights reserved | Registered Patent</p>
+                <p class="protechting-tag" data-en="Protechting 8th Edition Candidate" data-es="Candidato a Protechting 8va Edición">Protechting 8th Edition Candidate</p>
             </div>
         </div>
     </footer>

@@ -1,4 +1,97 @@
 // ========================================
+// LANGUAGE SWITCHER
+// ========================================
+let currentLang = 'en'; // Default language
+
+const translations = {
+    en: {
+        // Navigation
+        'nav-problem': 'Problem',
+        'nav-solution': 'Solution',
+        'nav-impact': 'Impact',
+        'nav-team': 'Team',
+        'nav-contact': 'Contact',
+    },
+    es: {
+        // Navigation
+        'nav-problem': 'Problema',
+        'nav-solution': 'Solución',
+        'nav-impact': 'Impacto',
+        'nav-team': 'Equipo',
+        'nav-contact': 'Contacto',
+    }
+};
+
+function switchLanguage(lang) {
+    currentLang = lang;
+    
+    // Update all elements with data-en and data-es attributes
+    document.querySelectorAll('[data-en][data-es]').forEach(element => {
+        const text = element.getAttribute(`data-${lang}`);
+        if (text) {
+            // Preserve HTML tags if present
+            if (text.includes('<')) {
+                element.innerHTML = text;
+            } else {
+                element.textContent = text;
+            }
+        }
+    });
+    
+    // Update active language button
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.getAttribute('data-lang') === lang) {
+            btn.classList.add('active');
+        }
+    });
+    
+    // Store preference
+    localStorage.setItem('preferredLang', lang);
+}
+
+// Language button event listeners
+document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const lang = btn.getAttribute('data-lang');
+        switchLanguage(lang);
+    });
+});
+
+// Load preferred language on page load
+window.addEventListener('DOMContentLoaded', () => {
+    const savedLang = localStorage.getItem('preferredLang') || 'en';
+    switchLanguage(savedLang);
+});
+
+// ========================================
+// TIMELINE ACCORDION
+// ========================================
+document.querySelectorAll('.timeline-toggle').forEach(toggle => {
+    toggle.addEventListener('click', function() {
+        const content = this.nextElementSibling;
+        const icon = this.querySelector('.toggle-icon');
+        const isActive = content.classList.contains('active');
+        
+        // Close all other timeline items
+        document.querySelectorAll('.timeline-content').forEach(c => {
+            c.classList.remove('active');
+        });
+        document.querySelectorAll('.timeline-toggle').forEach(t => {
+            t.classList.remove('active');
+            t.querySelector('.toggle-icon').textContent = '+';
+        });
+        
+        // Toggle current item
+        if (!isActive) {
+            content.classList.add('active');
+            this.classList.add('active');
+            icon.textContent = '−';
+        }
+    });
+});
+
+// ========================================
 // INITIALIZE AOS (Animate On Scroll)
 // ========================================
 AOS.init({
