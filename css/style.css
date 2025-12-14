@@ -26,11 +26,11 @@
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     
     /* Spacing - OPTIMIZADO PARA MÓVIL */
-    --spacing-xs: 0.5rem;
-    --spacing-sm: 0.75rem;  /* Reducido de 1rem */
-    --spacing-md: 1.5rem;   /* Reducido de 2rem */
-    --spacing-lg: 2.5rem;   /* Reducido de 4rem */
-    --spacing-xl: 4rem;     /* Reducido de 6rem */
+    --spacing-xs: 0.1rem;
+    --spacing-sm: 0.5rem;  /* Reducido de 1rem */
+    --spacing-md: 1rem;   /* Reducido de 2rem */
+    --spacing-lg: 1.5rem;   /* Reducido de 4rem */
+    --spacing-xl: 2rem;     /* Reducido de 6rem */
     
     /* Border Radius */
     --radius-sm: 4px;
@@ -136,7 +136,7 @@ p {
 }
 
 section {
-    padding: 2rem 0;  /* Reducido en móvil */
+    padding: 0.5rem 0;  /* Reducido en móvil */
 }
 
 @media (min-width: 768px) {
@@ -195,8 +195,14 @@ section {
     z-index: 1000;
     background-color: rgba(10, 10, 10, 0.95);
     backdrop-filter: blur(10px);
-    padding: 1rem 0;
+    padding: 0.75rem 0;  /* Reducido de 1rem */
     transition: var(--transition-base);
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        padding: 1rem 0;
+    }
 }
 
 .navbar.scrolled {
@@ -210,8 +216,14 @@ section {
 }
 
 .logo img {
-    height: 40px;
+    height: 35px;  /* Más pequeño en móvil */
     width: auto;
+}
+
+@media (min-width: 768px) {
+    .logo img {
+        height: 40px;
+    }
 }
 
 .lang-selector {
@@ -246,9 +258,16 @@ section {
 @media (max-width: 767px) {
     .lang-selector {
         position: absolute;
-        top: 1rem;
-        left: 1rem;
+        top: 50%;
+        right: 60px;  /* A la derecha del hamburguesa */
+        transform: translateY(-50%);
         z-index: 1002;
+        gap: 0.25rem;  /* Gap reducido */
+    }
+    
+    .lang-btn {
+        padding: 0.4rem 0.7rem;  /* Botón más pequeño */
+        font-size: 0.75rem;
     }
 }
 
@@ -409,9 +428,16 @@ section {
 
 .hero-stats {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 2rem;
-    margin: 3rem 0;
+    grid-template-columns: repeat(3, 1fr);  /* 3 columnas en móvil */
+    gap: 1rem;  /* Gap reducido */
+    margin: 2rem 0;
+}
+
+@media (min-width: 768px) {
+    .hero-stats {
+        gap: 2rem;
+        margin: 3rem 0;
+    }
 }
 
 .stat {
@@ -697,8 +723,14 @@ section {
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    height: 300px;  /* Altura fija */
+    object-fit: cover;  /* Cubrir manteniendo proporción */
+}
+
+@media (min-width: 768px) {
+    .tech-diagram img {
+        height: 400px;  /* Más alto en desktop */
+    }
 }
 
 .app-showcase {
@@ -928,16 +960,19 @@ section {
     overflow: hidden;
     transition: max-height 0.4s ease, padding 0.4s ease;
     padding: 0 1.5rem;
+    text-align: center;  /* CENTRAR TODO EL CONTENIDO */
 }
 
 .timeline-content.active {
     max-height: 1000px;
     padding: 0 1.5rem 1.5rem;
+    text-align: center;  /* CENTRAR TODO EL CONTENIDO */
 }
 
 .timeline-content p {
     color: var(--color-gray);
     margin-bottom: 1rem;
+    text-align: center;  /* Centrar texto */
 }
 
 .timeline-content img {
@@ -945,8 +980,9 @@ section {
     margin-top: 1rem;
     width: 100%;
     height: auto;
-    max-height: 400px;
-    object-fit: cover;
+    max-height: 450px;  /* Máximo 450px */
+    object-fit: contain;  /* Ver completa sin cortar */
+    background: var(--color-off-white);
 }
 
 .timeline-images {
@@ -954,30 +990,42 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
     margin-top: 1rem;
+    justify-content: center;  /* Centrar grid cuando hay pocas imágenes */
+    justify-items: center;
 }
 
 .timeline-images img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: auto;  /* Auto para ver foto completa */
+    min-height: 300px;  /* Mínimo 300px */
+    max-height: 450px;  /* Máximo 450px */
+    object-fit: contain;  /* Contener sin cortar */
     border-radius: var(--radius-md);
-    margin: 0;
-    max-height: none;
+    margin: 0 auto;
+    background: var(--color-off-white);  /* Fondo si sobra espacio */
 }
 
 @media (min-width: 768px) {
     .timeline-images {
         grid-template-columns: repeat(2, 1fr);
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .timeline-images img {
-        height: 250px;
+        max-height: 500px;  /* Más alto en tablet */
     }
 }
 
 @media (min-width: 1024px) {
     .timeline-images {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        max-width: 900px;
+    }
+    
+    .timeline-images img {
+        max-height: 450px;  /* Altura desktop */
     }
 }
 
@@ -991,8 +1039,9 @@ section {
 
 /* Dashboard UV */
 .uv-dashboard {
-    margin: 4rem 0;
-    text-align: center;
+    margin: 2rem 0;
+    text-align: center !important;
+
 }
 
 .uv-dashboard h3 {
@@ -1012,6 +1061,8 @@ section {
     height: auto;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
+    margin: 0 auto;  /* Centrar */
+    display: block;  /* Necesario para centrar con margin auto */
 }
 
 /* Certificación NASA */
@@ -1259,7 +1310,7 @@ section {
 }
 
 .logo-item img {
-    max-height: 80px;
+    max-height: 120px;  /* Aumentado de 80px a 120px */
     max-width: 100%;
     width: auto;
     height: auto;
