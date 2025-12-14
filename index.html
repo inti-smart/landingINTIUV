@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IntiUV+ - Sistema inteligente de monitoreo UV en tiempo real. Protegiendo vidas del cambio climático con tecnología solar.">
+    <meta name="keywords" content="IntiUV, radiación UV, monitoreo UV, cambio climático, salud ocupacional, energía solar, IoT">
+    <title>IntiUV+ | Protegiendo vidas del cambio climático</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Library for Scroll Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="img/logos/LOGO_BLANCO_intismart.webp" alt="INTI Smart Logo">
+                </div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#problema">Problema</a></li>
+                    <li><a href="#solucion">Solución</a></li>
+                    <li><a href="#impacto">Impacto</a></li>
+                    <li><a href="#equipo">Equipo</a></li>
+                    <li><a href="https://intismart.com" target="_blank" rel="noopener">Visitar INTI Smart</a></li>
+                    <li><a href="#contacto" class="btn-primary">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-video">
+            <iframe 
+                src="https://www.youtube.com/embed/wp0E1HjSkTA?autoplay=1&mute=1&loop=1&playlist=wp0E1HjSkTA&controls=0&showinfo=0&rel=0&modestbranding=1"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
+            </iframe>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="hero-title">Protegiendo vidas del <span class="highlight">cambio climático</span></h1>
+                <p class="hero-subtitle">Sistema inteligente de monitoreo UV en tiempo real con energía solar</p>
+                <div class="hero-stats">
+                    <div class="stat" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stat-number" data-count="95">0</div>
+                        <div class="stat-label">% Precisión</div>
+                    </div>
+                    <div class="stat" data-aos="fade-up" data-aos-delay="400">
+                        <div class="stat-number" data-count="77">0</div>
+                        <div class="stat-label">% Más económico</div>
+                    </div>
+                    <div class="stat" data-aos="fade-up" data-aos-delay="600">
+                        <div class="stat-number" data-count="24">0</div>
+                        <div class="stat-label">/ 7 Monitoreo</div>
+                    </div>
+                </div>
+                <div class="hero-cta" data-aos="fade-up" data-aos-delay="800">
+                    <a href="#solucion" class="btn-primary">Conocer IntiUV+</a>
+                    <a href="#contacto" class="btn-secondary">Solicitar Piloto</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- Problema Section -->
+    <section class="problema" id="problema">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">El Desafío</span>
+                <h2>El cambio climático está aumentando la radiación UV a niveles peligrosos</h2>
+            </div>
+            
+            <div class="problema-grid">
+                <div class="problema-card" data-aos="fade-right" data-aos-delay="100">
+                    <div class="card-icon">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                            <circle cx="32" cy="32" r="16" stroke="currentColor" stroke-width="2"/>
+                            <path d="M32 8V16M32 48V56M8 32H16M48 32H56" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M16 16L22 22M42 22L48 16M16 48L22 42M42 42L48 48" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Aumento de radiación UV</h3>
+                    <p>El deterioro de la capa de ozono y el cambio climático han incrementado la exposición a radiación UV en regiones andinas hasta niveles extremos (índice UV >14).</p>
+                </div>
+
+                <div class="problema-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                            <path d="M32 8C18 8 8 18 8 32C8 46 18 56 32 56C46 56 56 46 56 32C56 18 46 8 32 8Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M32 20V32L40 40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Trabajadores en riesgo</h3>
+                    <p>Miles de trabajadores en minería, agricultura y construcción están expuestos sin protección adecuada, aumentando el riesgo de cáncer de piel y otras enfermedades.</p>
+                </div>
+
+                <div class="problema-card" data-aos="fade-left" data-aos-delay="300">
+                    <div class="card-icon">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                            <rect x="12" y="12" width="40" height="40" rx="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 28L28 32L40 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Falta de sistemas de alerta</h3>
+                    <p>Las soluciones actuales son costosas (>S/15,000), no preventivas y carecen de alertas en tiempo real, dejando a la población desprotegida.</p>
+                </div>
+            </div>
+
+            <div class="problema-stats" data-aos="fade-up" data-aos-delay="400">
+                <div class="stat-large">
+                    <div class="stat-number-large">3,000+</div>
+                    <p>Casos anuales de cáncer de piel en Perú relacionados con exposición UV</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solución Section -->
+    <section class="solucion" id="solucion">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Nuestra Solución</span>
+                <h2>IntiUV+: Tecnología inteligente para proteger vidas</h2>
+            </div>
+
+            <div class="solucion-showcase">
+                <div class="showcase-image" data-aos="fade-right">
+                    <img src="img/dispositivo/dispositivo_frontal.png" alt="Dispositivo IntiUV+">
+                    <div class="image-badge">
+                        <span>Patente registrada</span>
+                    </div>
+                </div>
+
+                <div class="showcase-content" data-aos="fade-left">
+                    <h3>Sistema autónomo de monitoreo UV en tiempo real</h3>
+                    <p class="lead">IntiUV+ es un dispositivo inteligente que mide la radiación ultravioleta cada 5 minutos, enviando alertas preventivas a través de una aplicación móvil para proteger a las personas en espacios públicos y laborales.</p>
+                    
+                    <div class="features-grid">
+                        <div class="feature">
+                            <div class="feature-icon">⚡</div>
+                            <div class="feature-text">
+                                <h4>Energía Solar</h4>
+                                <p>100% autónomo y sostenible</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">📱</div>
+                            <div class="feature-text">
+                                <h4>App Móvil</h4>
+                                <p>Alertas en tiempo real</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">🎯</div>
+                            <div class="feature-text">
+                                <h4>95% Precisión</h4>
+                                <p>Calibrado en laboratorio</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">🌡️</div>
+                            <div class="feature-text">
+                                <h4>Multi-sensor</h4>
+                                <p>UV + Temperatura + Humedad</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">☁️</div>
+                            <div class="feature-text">
+                                <h4>IoT Cloud</h4>
+                                <p>Datos en la nube (ThingSpeak)</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">💰</div>
+                            <div class="feature-text">
+                                <h4>Bajo Costo</h4>
+                                <p>S/3,500 vs S/15,000+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Diagrama técnico -->
+            <div class="tech-diagram" data-aos="fade-up">
+                <h3>Arquitectura del sistema</h3>
+                <img src="img/diagrama_funcionamiento_del_circuito_digrama_de_conexiones.png" alt="Diagrama de funcionamiento IntiUV+">
+            </div>
+
+            <!-- App Screenshot -->
+            <div class="app-showcase" data-aos="fade-up">
+                <div class="app-content">
+                    <h3>Alertas preventivas en tu bolsillo</h3>
+                    <p>Nuestra aplicación móvil te notifica en tiempo real sobre los niveles de radiación UV, permitiéndote tomar decisiones informadas para proteger tu salud.</p>
+                    <ul class="app-features">
+                        <li>Notificaciones push en tiempo real</li>
+                        <li>Historial de mediciones</li>
+                        <li>Recomendaciones personalizadas</li>
+                        <li>Datos científicos validados</li>
+                    </ul>
+                </div>
+                <div class="app-image">
+                    <img src="img/foto_app.jpg" alt="App IntiUV+">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impacto Section -->
+    <section class="impacto" id="impacto">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Nuestro Impacto</span>
+                <h2>Resultados que transforman comunidades</h2>
+            </div>
+
+            <div class="impacto-grid">
+                <div class="impacto-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="impacto-number" data-count="2">0</div>
+                    <h4>Dispositivos instalados</h4>
+                    <p>Campus UNALM - Lima, Perú</p>
+                </div>
+                <div class="impacto-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="impacto-number"><span data-count="288">0</span></div>
+                    <h4>Mediciones diarias</h4>
+                    <p>Datos cada 5 minutos</p>
+                </div>
+                <div class="impacto-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="impacto-number"><span data-count="5000">0</span>+</div>
+                    <h4>Personas protegidas</h4>
+                    <p>Comunidad universitaria</p>
+                </div>
+                <div class="impacto-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="impacto-number"><span data-count="77">0</span>%</div>
+                    <h4>Más económico</h4>
+                    <p>vs. soluciones actuales</p>
+                </div>
+            </div>
+
+            <!-- Instalaciones -->
+            <div class="instalaciones" data-aos="fade-up">
+                <h3>Instalaciones activas</h3>
+                <div class="instalaciones-grid">
+                    <div class="instalacion-card">
+                        <img src="img/instalaciones/dispositivo_puerta1.png" alt="Instalación Puerta 1 UNALM">
+                        <div class="instalacion-info">
+                            <h4>UNALM - Puerta 1</h4>
+                            <p>Monitoreo continuo desde junio 2025</p>
+                        </div>
+                    </div>
+                    <div class="instalacion-card">
+                        <img src="img/instalaciones/foto_perfil_dispositivo_puerta_principal.webp" alt="Instalación Puerta Principal UNALM">
+                        <div class="instalacion-info">
+                            <h4>UNALM - Puerta Principal</h4>
+                            <p>Protegiendo la comunidad universitaria</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline" id="timeline">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Nuestra Trayectoria</span>
+                <h2>De la idea al impacto real</h2>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-date">Sep 2024</div>
+                    <div class="timeline-content">
+                        <h3>Primer Prototipo</h3>
+                        <p>Presentación en exposición científica UNALM, patrocinado por Incubagraria</p>
+                        <img src="img/trabajando_armado_prototipo_primer_prototipo.webp" alt="Primer prototipo">
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-date">Nov 2024</div>
+                    <div class="timeline-content">
+                        <h3>Ganadores Incubagraria</h3>
+                        <p>Seleccionados en escalamiento empresarial - alianza estratégica clave</p>
+                        <img src="img/ganagores_incuba_para_escalamiento_negocio.png" alt="Ganadores Incubagraria">
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-date">Ene 2025</div>
+                    <div class="timeline-content">
+                        <h3>Creación de INTI Smart S.A.C</h3>
+                        <p>Primera empresa peruana especializada en Sistemas de Alerta Temprana UV</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-date">Mar 2025</div>
+                    <div class="timeline-content">
+                        <h3>Alianza Estratégica UNALM</h3>
+                        <p>Convenio para implementar 2 dispositivos en campus universitario</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-date">May 2025</div>
+                    <div class="timeline-content">
+                        <h3>Reunión con MINEM</h3>
+                        <p>Propuesta de red nacional de monitoreo UV en operaciones mineras a cielo abierto</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-date">Jun 2025</div>
+                    <div class="timeline-content">
+                        <h3>Primera Instalación Exitosa</h3>
+                        <p>2 dispositivos IntiUV+ operativos en UNALM - Puerta Principal y Puerta 1</p>
+                        <img src="img/arreglando_dispositivo_de_la_puerta_1.jpg" alt="Instalación UNALM">
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-date">Sep 2025</div>
+                    <div class="timeline-content">
+                        <h3>Exposición Internacional - Sinapsis Europa</h3>
+                        <p>IX Encuentro de Científicos Peruanos en Europa presentando IntiUV+</p>
+                        <img src="img/eventos/foto_CEO_con_el_baner_SINAPSIS.jpg" alt="Sinapsis 2025">
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-date">Nov 2025</div>
+                    <div class="timeline-content">
+                        <h3>Ponentes en Semana de Investigación UNALM</h3>
+                        <p>Compartiendo nuestro conocimiento con la comunidad científica</p>
+                        <img src="img/eventos/semana_investigacion_exposicion.jpg" alt="Semana de Investigación">
+                    </div>
+                </div>
+
+                <div class="timeline-item current" data-aos="fade-right">
+                    <div class="timeline-date">Dic 2025</div>
+                    <div class="timeline-content">
+                        <h3>Aplicación a Protechting</h3>
+                        <p>En busca de nuevos retos para escalar nuestra solución internacionalmente</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipo Section -->
+    <section class="equipo" id="equipo">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Nuestro Equipo</span>
+                <h2>Meteorólogos jóvenes transformando la prevención</h2>
+                <p>Egresados de la Universidad Nacional Agraria La Molina con más de 6 años de amistad y colaboración</p>
+            </div>
+
+            <div class="equipo-grid">
+                <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member-image">
+                        <img src="img/equipo/_naasonCEO.webp" alt="Naason Perez Rojas">
+                    </div>
+                    <div class="member-info">
+                        <h3>Naason Milcerio Perez Rojas</h3>
+                        <span class="member-role">CEO & Tech Lead</span>
+                        <p>Especialista en desarrollo tecnológico, análisis de datos y sistemas IoT en la nube. Lidera la arquitectura técnica de IntiUV+.</p>
+                    </div>
+                </div>
+
+                <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+                    <div class="member-image">
+                        <img src="img/equipo/equipo_fotoGruapal.webp" alt="Johan Montoya">
+                    </div>
+                    <div class="member-info">
+                        <h3>Johan Jean Pierre Montoya Huayhua</h3>
+                        <span class="member-role">Marketing & Ventas</span>
+                        <p>Estratega comercial enfocado en posicionamiento de mercado y escalamiento de producción para ventas B2B y B2G.</p>
+                    </div>
+                </div>
+
+                <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+                    <div class="member-image">
+                        <img src="img/equipo/equipo_fotoGruapal.webp" alt="Yulinio Oimas">
+                    </div>
+                    <div class="member-info">
+                        <h3>Yulinio Oimas Mamani</h3>
+                        <span class="member-role">Investigación & Manufactura</span>
+                        <p>Experto en hardware, Arduino y componentes electrónicos. Lidera el desarrollo y manufactura de dispositivos IntiUV+.</p>
+                    </div>
+                </div>
+
+                <div class="team-member" data-aos="fade-up" data-aos-delay="400">
+                    <div class="member-image">
+                        <img src="img/equipo/equipo_fotoGruapal.webp" alt="Jhelssyn Huayanay">
+                    </div>
+                    <div class="member-info">
+                        <h3>Jhelssyn Huayanay Quispe</h3>
+                        <span class="member-role">Investigación Científica</span>
+                        <p>Responsable de investigación científica, publicaciones, calibraciones y validación técnica de mediciones UV.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foto grupal -->
+            <div class="team-photo" data-aos="zoom-in">
+                <img src="img/equipo_grupal_conepremio.png" alt="Equipo INTI Smart">
+                <p class="caption">Equipo INTI Smart tras ganar Incubagraria 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alianzas Section -->
+    <section class="alianzas" id="alianzas">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Nuestros Respaldos</span>
+                <h2>Instituciones que confían en nuestra tecnología</h2>
+            </div>
+
+            <div class="logos-grid" data-aos="fade-up">
+                <div class="logo-item">
+                    <img src="img/logos/logo_unalm.webp" alt="UNALM">
+                </div>
+                <div class="logo-item">
+                    <img src="img/logos/logo_senamhi.jpg" alt="SENAMHI">
+                </div>
+                <div class="logo-item">
+                    <img src="img/logos/logo_minesterioMinas.webp" alt="MINEM">
+                </div>
+                <div class="logo-item">
+                    <img src="img/logos/logo_incubagraria.webp" alt="Incubagraria">
+                </div>
+                <div class="logo-item">
+                    <img src="img/logos/logo_cpta.webp" alt="CPTA">
+                </div>
+                <div class="logo-item">
+                    <img src="img/logos/logo_cigerclim.webp" alt="CIGERCLIM">
+                </div>
+                <div class="logo-item">
+                    <img src="img/logos/logo_cgta.webp" alt="CGTA">
+                </div>
+                <div class="logo-item">
+                    <img src="img/logos/logo_salud.webp" alt="MINSA">
+                </div>
+            </div>
+
+            <!-- Colaboración SENAMHI -->
+            <div class="colaboracion-highlight" data-aos="fade-up">
+                <div class="colaboracion-content">
+                    <h3>Validación científica con SENAMHI</h3>
+                    <p>Estamos en proceso de calibración con el Servicio Nacional de Meteorología e Hidrología del Perú para garantizar la máxima precisión en nuestras mediciones y contribuir a la red nacional de monitoreo UV.</p>
+                </div>
+                <div class="colaboracion-image">
+                    <img src="img/Fotos_con_los_miembros_senamhi.jpg" alt="Colaboración SENAMHI">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pilotos Section -->
+    <section class="pilotos" id="pilotos">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Escalabilidad</span>
+                <h2>Listos para pilotos con Protechting</h2>
+            </div>
+
+            <div class="pilotos-grid">
+                <div class="piloto-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="piloto-icon">🏥</div>
+                    <h3>Sector Salud</h3>
+                    <p>Aseguradoras de salud y hospitales: prevención de cáncer de piel y enfermedades relacionadas con UV</p>
+                    <ul>
+                        <li>Programas preventivos para asegurados</li>
+                        <li>Reducción de siniestralidad</li>
+                        <li>Datos epidemiológicos UV</li>
+                    </ul>
+                </div>
+
+                <div class="piloto-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="piloto-icon">⛏️</div>
+                    <h3>Minería</h3>
+                    <p>Empresas mineras: protección de trabajadores en operaciones a cielo abierto</p>
+                    <ul>
+                        <li>Cumplimiento normativo SST</li>
+                        <li>Alertas en tiempo real</li>
+                        <li>Red de monitoreo en faenas</li>
+                    </ul>
+                </div>
+
+                <div class="piloto-card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="piloto-icon">🏙️</div>
+                    <h3>Ciudades Inteligentes</h3>
+                    <p>Gobiernos locales: infraestructura de alerta temprana en espacios públicos</p>
+                    <ul>
+                        <li>Parques y plazas protegidas</li>
+                        <li>Datos abiertos para ciudadanos</li>
+                        <li>Integración con apps municipales</li>
+                    </ul>
+                </div>
+
+                <div class="piloto-card" data-aos="flip-left" data-aos-delay="400">
+                    <div class="piloto-icon">🎓</div>
+                    <h3>Educación</h3>
+                    <p>Universidades y colegios: protección de estudiantes y concientización</p>
+                    <ul>
+                        <li>Campus seguros</li>
+                        <li>Educación preventiva</li>
+                        <li>Investigación colaborativa</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Roadmap -->
+            <div class="roadmap" data-aos="fade-up">
+                <h3>Roadmap de Expansión</h3>
+                <div class="roadmap-phases">
+                    <div class="phase">
+                        <div class="phase-number">1</div>
+                        <h4>Red Universitaria</h4>
+                        <p>5 universidades en Lima</p>
+                        <span class="phase-timeline">Q1 2026</span>
+                    </div>
+                    <div class="phase">
+                        <div class="phase-number">2</div>
+                        <h4>Sector Minero</h4>
+                        <p>3 operaciones piloto</p>
+                        <span class="phase-timeline">Q2 2026</span>
+                    </div>
+                    <div class="phase">
+                        <div class="phase-number">3</div>
+                        <h4>Red Nacional Perú</h4>
+                        <p>50 dispositivos en 10 ciudades</p>
+                        <span class="phase-timeline">Q3-Q4 2026</span>
+                    </div>
+                    <div class="phase">
+                        <div class="phase-number">4</div>
+                        <h4>Expansión Latam</h4>
+                        <p>Chile, Bolivia, Ecuador</p>
+                        <span class="phase-timeline">2027</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Funding -->
+            <div class="funding-ask" data-aos="zoom-in">
+                <h3>Capital necesario para escalar</h3>
+                <div class="funding-amount">$50,000 USD</div>
+                <p>Para producir 50 unidades, establecer cadena de suministro escalable y ejecutar pilotos corporativos</p>
+                <div class="funding-breakdown">
+                    <div class="breakdown-item">
+                        <span class="amount">$25k</span>
+                        <span class="label">Producción (50 unidades)</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span class="amount">$15k</span>
+                        <span class="label">Marketing & Ventas</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span class="amount">$10k</span>
+                        <span class="label">R&D y Certificaciones</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section class="contacto" id="contacto">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Contáctanos</span>
+                <h2>Únete a la red de protección UV</h2>
+                <p>¿Interesado en pilotar IntiUV+ con nosotros? Conversemos</p>
+            </div>
+
+            <div class="contacto-content">
+                <div class="contacto-info" data-aos="fade-right">
+                    <div class="info-item">
+                        <div class="info-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:contacto@intismart.com">contacto@intismart.com</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📱</div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/51918068388" target="_blank">+51 918 068 388</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">🌐</div>
+                        <div>
+                            <h4>Web</h4>
+                            <a href="https://intismart.com" target="_blank">www.intismart.com</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div>
+                            <h4>Ubicación</h4>
+                            <p>Lima, Perú</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61577128277659" target="_blank" rel="noopener" aria-label="Facebook">
+                            <img src="img/redes/facebook.ico" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/inti.smart/" target="_blank" rel="noopener" aria-label="Instagram">
+                            <img src="img/redes/instagram.ico" alt="Instagram">
+                        </a>
+                        <a href="https://www.linkedin.com/company/inti-smart/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <img src="img/redes/linkedin.ico" alt="LinkedIn">
+                        </a>
+                        <a href="https://wa.me/51918068388" target="_blank" rel="noopener" aria-label="WhatsApp">
+                            <img src="img/redes/whatsapp.ico" alt="WhatsApp">
+                        </a>
+                        <a href="mailto:contacto@intismart.com" aria-label="Email">
+                            <img src="img/redes/gmail.ico" alt="Email">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contacto-cta" data-aos="fade-left">
+                    <h3>Solicita una demostración</h3>
+                    <p>Instalamos un dispositivo IntiUV+ piloto en 2 semanas (próximamente en menos de 1 semana)</p>
+                    <a href="https://wa.me/51918068388?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20IntiUV+%20y%20solicitar%20un%20piloto" class="btn-primary" target="_blank">Contactar por WhatsApp</a>
+                    <p class="footnote">Respuesta en menos de 24 horas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/logos/LOGO_BLANCO_intismart.webp" alt="INTI Smart">
+                    <p>Innovación que protege vidas del cambio climático</p>
+                </div>
+                <div class="footer-info">
+                    <p><strong>INTI Smart S.A.C</strong></p>
+                    <p>RUC: 20613659081</p>
+                    <p>Fundada en 2025</p>
+                    <p>Lima, Perú</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 INTI Smart S.A.C. Todos los derechos reservados | Patente Registrada</p>
+                <p class="protechting-tag">Candidato a Protechting 8va Edición</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
